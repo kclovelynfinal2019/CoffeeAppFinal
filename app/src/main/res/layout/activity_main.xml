@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="25dp"
+    tools:layout_editor_absoluteY="0dp">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-216dp"
+        android:padding="10dp"
+        android:text="Quantity"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="Select Coffee Flavor"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+    <CheckBox
+        android:id="@+id/creamylatte_checkbox"
+        android:layout_width="159dp"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp"
+        android:padding="10dp"
+        android:text="Creamy Latte"
+        android:textColor="#9710da"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_alignEnd="@+id/creamylatte_checkbox"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/creamylatte_checkbox"
+        android:layout_marginTop="216dp"
+        android:padding="10dp"
+        android:text="Quantity"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/quantityTxts"
+        android:layout_width="wrap_content"
+        android:layout_height="54dp"
+        android:layout_centerInParent="true"
+        android:padding="16sp"
+        android:text="0"
+        android:textColor="#9a10da"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/decrementBtn"
+        android:layout_width="41dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/whipped_cream_checkbox"
+        android:layout_centerVertical="true"
+        android:background="#1090da"
+        android:onClick="decrement"
+        android:text="-"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/incrementBtn"
+        android:layout_width="41dp"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/creamylatte_checkbox"
+        android:layout_centerVertical="true"
+        android:background="#1090da"
+        android:onClick="increment"
+        android:text="+"
+        android:textSize="20dp" />
+
+
+    <CheckBox
+        android:id="@+id/whipped_cream_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="116dp"
+        android:padding="10dp"
+        android:text="Coffee Delight"
+        android:textColor="#9d10da"
+        android:textSize="15dp"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/resultTxt"
+        android:layout_width="400dp"
+        android:layout_height="103dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="28dp"
+        android:text="Result"
+        android:textColor="#a110da"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/orderBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="145dp"
+        android:onClick="orderButton"
+        android:text="Order"
+        tools:ignore="OnClick" />
+
+
+</RelativeLayout>
+
+
